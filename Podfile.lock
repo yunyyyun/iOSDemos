@@ -1,0 +1,15 @@
+PODS:
+  - FlexBoxLayout (0.8.0)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - FlexBoxLayout
+  - Masonry
+
+SPEC CHECKSUMS:
+  FlexBoxLayout: c9b33370cc9001dc9f4f1934972827bd6096f75e
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 919fcdcb777e9e53cbbe338e6c8c40684aff14c2
+
+COCOAPODS: 1.4.0
