@@ -23,6 +23,10 @@
 		51538723207F9FD5008DE68C /* ViewControllerMast.m in Sources */ = {isa = PBXBuildFile; fileRef = 51538722207F9FD5008DE68C /* ViewControllerMast.m */; };
 		51538726207FA005008DE68C /* ViewControllerSlave.m in Sources */ = {isa = PBXBuildFile; fileRef = 51538725207FA005008DE68C /* ViewControllerSlave.m */; };
 		5153872A207FA51E008DE68C /* ViewControllerForGcdTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 51538729207FA51E008DE68C /* ViewControllerForGcdTest.m */; };
+		51907F7A2084D7A200CC4B66 /* TestIsa.m in Sources */ = {isa = PBXBuildFile; fileRef = 51907F792084D7A200CC4B66 /* TestIsa.m */; };
+		51907F7D2084E0E200CC4B66 /* HelperClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 51907F7C2084E0E200CC4B66 /* HelperClass.m */; };
+		51907F842086395400CC4B66 /* AlterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51907F832086395400CC4B66 /* AlterViewController.m */; };
+		51907F8720863FB300CC4B66 /* MyAlterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51907F8620863FB300CC4B66 /* MyAlterViewController.m */; };
 		AB38399DF45064C3877FBCE5 /* libPods-iOSDemos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 151BA8471EE4BAE8E9340AEC /* libPods-iOSDemos.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +63,14 @@
 		51538725207FA005008DE68C /* ViewControllerSlave.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerSlave.m; sourceTree = "<group>"; };
 		51538728207FA51E008DE68C /* ViewControllerForGcdTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerForGcdTest.h; sourceTree = "<group>"; };
 		51538729207FA51E008DE68C /* ViewControllerForGcdTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerForGcdTest.m; sourceTree = "<group>"; };
+		51907F782084D7A200CC4B66 /* TestIsa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestIsa.h; sourceTree = "<group>"; };
+		51907F792084D7A200CC4B66 /* TestIsa.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestIsa.m; sourceTree = "<group>"; };
+		51907F7B2084E0E200CC4B66 /* HelperClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelperClass.h; sourceTree = "<group>"; };
+		51907F7C2084E0E200CC4B66 /* HelperClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelperClass.m; sourceTree = "<group>"; };
+		51907F822086395400CC4B66 /* AlterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlterViewController.h; sourceTree = "<group>"; };
+		51907F832086395400CC4B66 /* AlterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlterViewController.m; sourceTree = "<group>"; };
+		51907F8520863FB300CC4B66 /* MyAlterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAlterViewController.h; sourceTree = "<group>"; };
+		51907F8620863FB300CC4B66 /* MyAlterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAlterViewController.m; sourceTree = "<group>"; };
 		EAC8033EB2D866E6C17DB1F3 /* Pods-iOSDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDemos.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSDemos/Pods-iOSDemos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +107,7 @@
 		515386ED207F895B008DE68C /* iOSDemos */ = {
 			isa = PBXGroup;
 			children = (
+				51907F812086393300CC4B66 /* AlertView */,
 				519BDA3C2081CB4000C27162 /* CrashCatch */,
 				51538727207FA501008DE68C /* GCD */,
 				51538720207F9F90008DE68C /* Callback */,
@@ -169,6 +182,10 @@
 				5153871B207F9D90008DE68C /* UIImage+Extension.h */,
 				5153871D207F9DA6008DE68C /* ViewControllerForRuntimeTest.h */,
 				5153871E207F9DA6008DE68C /* ViewControllerForRuntimeTest.m */,
+				51907F782084D7A200CC4B66 /* TestIsa.h */,
+				51907F792084D7A200CC4B66 /* TestIsa.m */,
+				51907F7B2084E0E200CC4B66 /* HelperClass.h */,
+				51907F7C2084E0E200CC4B66 /* HelperClass.m */,
 			);
 			path = RunTime;
 			sourceTree = "<group>";
@@ -191,6 +208,17 @@
 				51538729207FA51E008DE68C /* ViewControllerForGcdTest.m */,
 			);
 			path = GCD;
+			sourceTree = "<group>";
+		};
+		51907F812086393300CC4B66 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				51907F822086395400CC4B66 /* AlterViewController.h */,
+				51907F832086395400CC4B66 /* AlterViewController.m */,
+				51907F8520863FB300CC4B66 /* MyAlterViewController.h */,
+				51907F8620863FB300CC4B66 /* MyAlterViewController.m */,
+			);
+			path = AlertView;
 			sourceTree = "<group>";
 		};
 		519BDA3C2081CB4000C27162 /* CrashCatch */ = {
@@ -343,16 +371,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				51538714207F9737008DE68C /* CView.m in Sources */,
+				51907F7D2084E0E200CC4B66 /* HelperClass.m in Sources */,
 				5153872A207FA51E008DE68C /* ViewControllerForGcdTest.m in Sources */,
 				5153871F207F9DA6008DE68C /* ViewControllerForRuntimeTest.m in Sources */,
 				51538717207F9737008DE68C /* ViewControllerUseFlexBox.m in Sources */,
 				515386F3207F895B008DE68C /* ViewController.m in Sources */,
 				51538715207F9737008DE68C /* MasonryViewController.m in Sources */,
+				51907F842086395400CC4B66 /* AlterViewController.m in Sources */,
 				515386F9207F895B008DE68C /* iOSDemos.xcdatamodeld in Sources */,
 				51538723207F9FD5008DE68C /* ViewControllerMast.m in Sources */,
 				5153871C207F9D90008DE68C /* UIImage+Category.m in Sources */,
+				51907F7A2084D7A200CC4B66 /* TestIsa.m in Sources */,
 				51538701207F895B008DE68C /* main.m in Sources */,
 				515386F0207F895B008DE68C /* AppDelegate.m in Sources */,
+				51907F8720863FB300CC4B66 /* MyAlterViewController.m in Sources */,
 				51538726207FA005008DE68C /* ViewControllerSlave.m in Sources */,
 				51538716207F9737008DE68C /* ViewControllerForFrameTest.m in Sources */,
 			);

@@ -17,6 +17,8 @@
 
 #import "ViewControllerForGcdTest.h"
 
+#import "AlterViewController.h"
+
 @interface ViewController ()
 
 @property(nonatomic, strong)NSArray *titleArr;
@@ -34,6 +36,7 @@
                         @"Runtime",
                         @"Callback",
                         @"GCD",
+                        @"AlterViewController",
                         nil];
     NSArray *arrForDemo1 = [NSArray arrayWithObjects:
                             [ViewControllerForFrameTest description],
@@ -49,7 +52,10 @@
     NSArray *arrForDemo4 = [NSArray arrayWithObjects:
                             [ViewControllerForGcdTest description],
                             nil];
-    _titleArr = [NSArray arrayWithObjects: arrForDemo1, arrForDemo2, arrForDemo3, arrForDemo4, nil];
+    NSArray *arrForDemo5 = [NSArray arrayWithObjects:
+                            [AlterViewController description],
+                            nil];
+    _titleArr = [NSArray arrayWithObjects: arrForDemo1, arrForDemo2, arrForDemo3, arrForDemo4, arrForDemo5, nil];
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     tableView.delegate = self;
     tableView.dataSource = self;
@@ -78,6 +84,7 @@
     NSString *className = tmpArr[indexPath.row];
     NSLog(@"jump to className---- %@", className);
     UIViewController *vc = [[NSClassFromString(className) alloc] init];
+    vc.view.backgroundColor = [UIColor lightGrayColor];
     [self.navigationController pushViewController:vc animated:YES];
     
 }

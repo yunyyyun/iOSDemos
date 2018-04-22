@@ -9,6 +9,7 @@
 #import "ViewControllerForRuntimeTest.h"
 #import "objc/runtime.h"
 #import "UIImage+Category.h"
+#import "TestIsa.h"
 
 @interface ViewControllerForRuntimeTest ()
 
@@ -20,6 +21,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor lightGrayColor];
+    
+    TestIsa *a = [[TestIsa alloc] init];
+    [a foo:@"11111"];
+    //[TestIsa foo_class:@"222"];
+    
+    NSLog(@"%@", NSStringFromClass([self class]));
+    NSLog(@"%@", NSStringFromClass([super class])); // id objc_msgSendSuper
     
     static char key = 'w';
     NSString *value = @"123123";
