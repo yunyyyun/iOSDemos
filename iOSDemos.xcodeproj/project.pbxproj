@@ -27,6 +27,7 @@
 		51907F7D2084E0E200CC4B66 /* HelperClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 51907F7C2084E0E200CC4B66 /* HelperClass.m */; };
 		51907F842086395400CC4B66 /* AlterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51907F832086395400CC4B66 /* AlterViewController.m */; };
 		51907F8720863FB300CC4B66 /* MyAlterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51907F8620863FB300CC4B66 /* MyAlterViewController.m */; };
+		51A1D8A1208E1C1C00600919 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A1D8A0208E1C1C00600919 /* TimerViewController.m */; };
 		AB38399DF45064C3877FBCE5 /* libPods-iOSDemos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 151BA8471EE4BAE8E9340AEC /* libPods-iOSDemos.a */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,8 @@
 		51907F832086395400CC4B66 /* AlterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlterViewController.m; sourceTree = "<group>"; };
 		51907F8520863FB300CC4B66 /* MyAlterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAlterViewController.h; sourceTree = "<group>"; };
 		51907F8620863FB300CC4B66 /* MyAlterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAlterViewController.m; sourceTree = "<group>"; };
+		51A1D89F208E1C1C00600919 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		51A1D8A0208E1C1C00600919 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		EAC8033EB2D866E6C17DB1F3 /* Pods-iOSDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDemos.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSDemos/Pods-iOSDemos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +110,7 @@
 		515386ED207F895B008DE68C /* iOSDemos */ = {
 			isa = PBXGroup;
 			children = (
+				51A1D89E208E1BE800600919 /* TheTimer */,
 				51907F812086393300CC4B66 /* AlertView */,
 				519BDA3C2081CB4000C27162 /* CrashCatch */,
 				51538727207FA501008DE68C /* GCD */,
@@ -226,6 +230,15 @@
 			children = (
 			);
 			path = CrashCatch;
+			sourceTree = "<group>";
+		};
+		51A1D89E208E1BE800600919 /* TheTimer */ = {
+			isa = PBXGroup;
+			children = (
+				51A1D89F208E1C1C00600919 /* TimerViewController.h */,
+				51A1D8A0208E1C1C00600919 /* TimerViewController.m */,
+			);
+			path = TheTimer;
 			sourceTree = "<group>";
 		};
 		72897D4BBB48A78BF82560B9 /* Pods */ = {
@@ -382,6 +395,7 @@
 				51538723207F9FD5008DE68C /* ViewControllerMast.m in Sources */,
 				5153871C207F9D90008DE68C /* UIImage+Category.m in Sources */,
 				51907F7A2084D7A200CC4B66 /* TestIsa.m in Sources */,
+				51A1D8A1208E1C1C00600919 /* TimerViewController.m in Sources */,
 				51538701207F895B008DE68C /* main.m in Sources */,
 				515386F0207F895B008DE68C /* AppDelegate.m in Sources */,
 				51907F8720863FB300CC4B66 /* MyAlterViewController.m in Sources */,

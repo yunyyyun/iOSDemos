@@ -29,7 +29,7 @@
     _bgView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview: _bgView];
     
-    _size = 22;
+    _size = 3;
     _views = [NSMutableArray arrayWithCapacity:_size*_size];
     for (NSInteger i=0;i<_size*_size;++i){
         CView *view = [[CView alloc] init];
@@ -37,7 +37,9 @@
         [_bgView addSubview:view];
     }
     
+    NSLog(@"========1");
     [self layoutsubviews];
+    NSLog(@"========12");
     
     _enlargeBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 600, 44, 33)];
     [_enlargeBtn setTitle:@"放大" forState:UIControlStateNormal];

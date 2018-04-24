@@ -22,9 +22,13 @@
 {
     self = [super init];
     if (self) {
-        _imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"1024"]];
+        _imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"12"]];
     }
     return self;
+}
+
+- (void) drawRect:(CGRect)rect{
+    NSLog(@"---mytest----%s",__FUNCTION__);
 }
 
 - (void) layoutSubviews{

@@ -7,17 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "ViewControllerForFrameTest.h"
-#import "MasonryViewController.h"
-#import "ViewControllerUseFlexBox.h"
-
-#import "ViewControllerForRuntimeTest.h"
-
-#import "ViewControllerSlave.h"
-
-#import "ViewControllerForGcdTest.h"
-
-#import "AlterViewController.h"
 
 @interface ViewController ()
 
@@ -39,21 +28,21 @@
                         @"AlterViewController",
                         nil];
     NSArray *arrForDemo1 = [NSArray arrayWithObjects:
-                            [ViewControllerForFrameTest description],
-                            [MasonryViewController description],
-                            [ViewControllerUseFlexBox description],
+                            @"ViewControllerForFrameTest",
+                            @"MasonryViewController",
+                            @"ViewControllerUseFlexBox",
                             nil];
     NSArray *arrForDemo2 = [NSArray arrayWithObjects:
-                            [ViewControllerForRuntimeTest description],
+                            @"ViewControllerForRuntimeTest",
                             nil];
     NSArray *arrForDemo3 = [NSArray arrayWithObjects:
-                            [ViewControllerSlave description],
+                            @"ViewControllerSlave",
                             nil];
     NSArray *arrForDemo4 = [NSArray arrayWithObjects:
-                            [ViewControllerForGcdTest description],
+                            @"ViewControllerForGcdTest",
                             nil];
     NSArray *arrForDemo5 = [NSArray arrayWithObjects:
-                            [AlterViewController description],
+                            @"TimerViewController",
                             nil];
     _titleArr = [NSArray arrayWithObjects: arrForDemo1, arrForDemo2, arrForDemo3, arrForDemo4, arrForDemo5, nil];
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
